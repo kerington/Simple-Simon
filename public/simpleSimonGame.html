@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Simple Simon Game</title>
+    <title>Simple Simon Game</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather_map.css">
+
+    <!--CUSTOM STYLESHEET-->
+    <link rel="stylesheet" href="css/simpleSimonGame.css">
+
 </head>
 <body>
+
+    <main class="container">
+        <h1>Simple Simon Game</h1>
+        <div id="weather"></div>
+        <div id="map-canvas"></div>
+
+    <!-- jQuery Version 2.2.4 -->
+   <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+   <!-- Bootstrap Core JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <div id="gameBoard" class="board"></div>
+    <div id="boxRed" class="box"></div>
+    <div id="boxYellow" class="box"></div>
+    <div id="boxBlue" class="box"></div>
+    <div id="boxGreen" class="box"></div>
 
 </body>
 </html>
