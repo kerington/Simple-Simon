@@ -1,0 +1,51 @@
+Simple Simon Game Notes:
+
+
+Rules:
+~ The Challenge:
+	- To repeat the never-ending random signals that generate.
+	- To win, you must beat the current high score by passing more levels than anyone else has.
+
+~ General Description:
+	- Start Button- When clicked, this will begin the game.
+
+~ How To Play: 
+	- Press the "START" button in the center of the game, and Simon will give the first signal.
+	- Repeat the signal by clicking on the same color.
+	- Each time you have repeated a signal, you have passed a round. You get 3 points for each round passed.
+	- Simon will then duplicate the first signal, and then add another.
+	- Repeat the two signals by pressing the same colors in order of appearance. 
+	- Simon will then duplicate the first two signals, and then add a third. 
+	- Continue with this process as long as you can to reach the end of the game and be a winner!
+	- *IF* you fail to repeat a sequence exactly or if you take **longer than 7 seconds** to repeat a signal, Simon responds with a **Losing Sound**; you have lost and must restart the game to try again.
+
+
+What I need to do:
+- one big box holding the following:
+- 4 boxes- pastel red, pastel blue, pastel yellow, pastel green.
+	- light up to normal colors when clicked
+- click circle in the middle of all 4 buttons
+	- "Click to begin"
+
+
+Extras:
+** NO longer than 7 seconds to repeat a signal. **
+** Losing Sound - must find/create and upload. **
+** Box colors - start as pastel and then brighten up to "normal" color when signal is given OR clicked **
+** Set up point counter, adding 3 points to total after round is passed. **
+
+
+DON'T FORGET!:
+- ** MAKE SURE all code is SPACED, NOT TABBED!!!
+- ** MAKE SURE no code is commented out, all comments must be descrptions of code (esp if it is difficult to understand why it is there.)
+- ** MAKE SURE comments answer the question "Why"
+- ** CLEAN UP code throughout exercise! Make sure it is properly indented and spaced. 
+- ** MAKE SURE there are curly braces around every control structure body?
+- ** MAKE SURE no bugs are showing in console!
+- ** MAKE SURE new features can be added and current features can mostlyyyy be deleted, and the code still functions properly.
+- ** MAKE SURE code is broken into discrete pieces.
+- ** MAKE SURE code is FREE of duplicate code!
+- ** MAKE SURE TO COMMIT AND PUSH TO GIT HUB FREQUENTLY!
+	~ All comments must explain the following: "Why am I committing this RIGHT NOW, what did I add/delete/change, and why?"!! * BE DESCRIPTIVE * 
+
+
