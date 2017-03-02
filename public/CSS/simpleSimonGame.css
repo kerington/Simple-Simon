@@ -8,84 +8,56 @@ body {
 } 
 
 
-/*#gameBoard {
-    margin: 50px auto;
-    width: 500px;
-    height: 600px;
+#gameBoard {
+    margin: 0 auto;
+    width: 550px;
+    height: 450px;
     border: 1px solid #000;
     padding: 10px;
-}*/
+    position: relative;
+}
 
 #boxRed {
     background-color: red;
     height: 150px;
-    margin: auto;
-    width: 30%;
+    margin: 2px;
+    width: 48%;
     float: left;
+    position: relative;
+    /*border: 2px solid white;*/
+    box-shadow: 5px 5px 2px #888888;
 }
 
 #boxYellow {
     background-color: yellow;
     height: 150px;
-    margin: auto;
-    width: 30%;
+    margin: 2px;
+    width: 48%;
     float: left;
+    position: relative;
+    /*border: 2px solid white;*/
+    box-shadow: 5px 5px 2px #888888;
 }
 
 #boxBlue {
     background-color: blue;
     height: 150px;
-    margin: auto;
-    width: 30%;
+    margin: 2px;
+    width: 48%;
     float: left;
     clear: left;
+    position: relative;
+    /*border: 2px solid white;*/
+    box-shadow: 5px 5px 2px #888888;
 }
 
 #boxGreen {
     background-color: green;
     height: 150px;
-    margin: auto;
-    width: 30%;
+    margin: 2px;
+    width: 48%;
     float: left;
+    position: relative;
+    /*border: 2px solid white;*/
+    box-shadow: 5px 5px 2px #888888;
 }
-
-/*
-
-#gameBoard {
-	border: 1px black solid;
-	height: 550px;
-	width: 550px;
-	font-weight: bold;
-	color: #000;
-	padding: 10px;
-	margin-bottom: 50px auto;
-}
-
-#boxRed {
-	border:1px black solid;
-	width:150px;
-	height:150px;
-	margin-right: 20px;
-	float:left;
-}
-
-#boxYellow {
-	border:1px black solid;
-	width:150px;
-	height:150px;
-}
-
-#boxBlue {
-	border:1px black solid;
-	position: relative;
-	clear:left;
-	width:150px;
-	height:150px;
-	margin-right: 20px;
-}
-
-#boxGreen {
-	border:1px black solid;
-	width:150px;
-	height:150px;
-}*/

@@ -4,7 +4,7 @@ Simple Simon Game Notes:
 
 What I need to do:
 
-- Create one big box/shape in CSS to hold the following:
+- Create one big box/shape (gameboard) in CSS to hold the following:
 
 	- COLOR BOXES - 4 boxes total - pastel red ("#FF7575"), pastel blue ("#2F74D0"), pastel yellow ("#FFFF84"), pastel green ("#1FCB4A").
 		- ASSIGN each box a number (1-4)
