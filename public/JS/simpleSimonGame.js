@@ -2,30 +2,30 @@ $(document).ready(function(){
     "use strict";
 
 $("#boxRed").click(function(){
-	$("#boxRed").fadeOut(300);
-	$("#boxRed").fadeIn(300);
-	console.log("meow");
+	$("#boxRed").fadeOut(100);
+	$("#boxRed").fadeIn(100);
+	console.log("Red");
 
 })
 
 $("#boxYellow").click(function(){
-	$("#boxYellow").fadeOut(300);
-	$("#boxYellow").fadeIn(300);
-	console.log("meow");
+	$("#boxYellow").fadeOut(100);
+	$("#boxYellow").fadeIn(100);
+	console.log("Yellow");
 
 })
 
 $("#boxBlue").click(function(){
-	$("#boxBlue").fadeOut(300);
-	$("#boxBlue").fadeIn(300);
-	console.log("meow");
+	$("#boxBlue").fadeOut(100);
+	$("#boxBlue").fadeIn(100);
+	console.log("Blue");
 
 })
 
 $("#boxGreen").click(function(){
-	$("#boxGreen").fadeOut(300);
-	$("#boxGreen").fadeIn(300);
-	console.log("meow");
+	$("#boxGreen").fadeOut(100);
+	$("#boxGreen").fadeIn(100);
+	console.log("Green");
 
 })
 });

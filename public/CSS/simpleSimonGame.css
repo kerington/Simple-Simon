@@ -19,7 +19,8 @@ body {
 
 #boxRed {
     background-color: red;
-    height: 150px;
+    opacity: 0.9;
+    height: 40%;
     margin: 2px;
     width: 48%;
     float: left;
@@ -30,7 +31,8 @@ body {
 
 #boxYellow {
     background-color: yellow;
-    height: 150px;
+    opacity: 0.9;
+    height: 40%;
     margin: 2px;
     width: 48%;
     float: left;
@@ -41,7 +43,8 @@ body {
 
 #boxBlue {
     background-color: blue;
-    height: 150px;
+    opacity: 0.9;
+    height: 40%;
     margin: 2px;
     width: 48%;
     float: left;
@@ -53,7 +56,8 @@ body {
 
 #boxGreen {
     background-color: green;
-    height: 150px;
+    opacity: 0.9;
+    height: 40%;
     margin: 2px;
     width: 48%;
     float: left;
@@ -61,3 +65,6 @@ body {
     /*border: 2px solid white;*/
     box-shadow: 5px 5px 2px #888888;
 }
+
+
+/*LOOK INTO USING BOOTSTRAP GRID FOR BOXES FOR BETTER RESIZE OPTIONS!*/
