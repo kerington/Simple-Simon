@@ -1,66 +1,127 @@
-body {
-	background-color: #000;
-	color: #FFF;
-	text-align: center;
-	font-family: Lora;
-	text-decoration: bold;
-} 
-
-
-#gameBoard {
-	background-color: black;
+.gameContainer {
+    position: relative;
+    width: 440px;
+    height: 440px;
     margin: 0 auto;
-    width: 80%;
-    height: 400px;
-    border: 1px solid #000;
-    padding: 10px;
-    position: relative;
+    margin-top: 50px;
+    border: solid 1px #1A1A1A;
+    border-radius: 80%;
+    background-color: #1A1A1A;
 }
 
-#boxRed {
-    background-color: red;
-    opacity: 0.9;
-    height: 180px;
-    margin: 2px;
-    width: 49%;
-    float: left;
-    position: relative;
-    box-shadow: 3px 3px 2px #d9d9d9;
+.fourButton {
+    position: absolute;
+    margin: 20px;
+    width: 190px;
+    height: 190px;
 }
 
-#boxYellow {
-    background-color: yellow;
-    opacity: 0.9;
-    height: 180px;
-    margin: 2px;
-    width: 49%;
-    float: left;
-    position: relative;
-    box-shadow: 3px 3px 2px #d9d9d9;
+.fourButton:active {
+    opacity: .5;
 }
 
-#boxBlue {
-    background-color: blue;
-    opacity: 0.9;
-    height: 180px;
-    margin: 2px;
-    width: 49%;
-    float: left;
-    clear: left;
-    position: relative;
-    box-shadow: 3px 3px 2px #d9d9d9;
+.activated {
+    opacity: .5;
 }
 
-#boxGreen {
+#buttonGreen {
+    top: 0; 
+    left: 0; /*Keeping the buttons in place and not allowing them to become distorted*/
     background-color: green;
-    opacity: 0.9;
-    height: 180px;
-    margin: 2px;
-    width: 49%;
-    float: left;
-    position: relative;
-    box-shadow: 3px 3px 2px #d9d9d9;
+    border-radius: 100% 0 0 0; /*Creating the curve on the outside of the colored buttons*/
 }
 
+#buttonRed {
+    top: 0;
+    right: 0;
+    background-color: red;
+    border-radius: 0 100% 0 0 ;
+}
 
-/*LOOK INTO USING BOOTSTRAP GRID FOR BOXES FOR BETTER RESIZE OPTIONS!*/
+#buttonYellow {
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    border-radius: 0 0 0 100%;
+}
+
+#buttonBlue {
+    bottom: 0;
+    right: 0;
+    background-color: blue;
+    border-radius: 0 0 100% 0 ;
+}
+
+#center {
+    position: absolute;
+    background-color: white;
+    border: 20px solid #1A1A1A;
+    width: 200px;
+    height: 200px;
+    top: 120px;
+    left: 120px;
+    border-radius: 50%;
+}
+
+#textTitle {
+    height: 70px;
+    line-height: 90px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+}
+
+#countBox {
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+}
+
+#countDisplay {
+    border: solid 3px black;
+    border-radius: 50%;
+    height: 90%;
+    width: 95%;
+    margin: 50px 10px 0px 10px;
+    background: yellow;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#countText {
+    height: 40%;
+    margin: 4px 6px 0px 26px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#startBox {
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+}
+
+#startButton {
+    border: solid 3px black;
+    border-radius: 50%;
+    height: 90%;
+    width: 95%;
+    margin: 50px 10px 0px 10px;
+    background: red;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#startText {
+    height: 30%;
+    margin: 4px 6px 0px 6px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
