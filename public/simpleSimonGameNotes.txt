@@ -136,9 +136,9 @@ Extras:
 
 ** Losing Sound - must find/create and upload. **
 
-** LOSING EFFECT - must find/create something. **
+** Losing Effect - must find/create something. **
 
-** Box colors - start as pastel and then brighten up to "normal" color when signal is given AND clicked **
+** Box colors - start with normal colors  "normal" color when signal is given AND clicked **
 
 ** Set up point counter that adds 3 points to total after round is passed. These points will show up on a Leaderboard after each round, and will be accessable by a button at the bottom of the screen. **
 
