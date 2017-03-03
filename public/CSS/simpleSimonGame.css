@@ -1,17 +1,17 @@
 body {
-	background-color: #FFF;
-	color: #333;
+	background-color: #000;
+	color: #FFF;
 	text-align: center;
 	font-family: Lora;
 	text-decoration: bold;
-
 } 
 
 
 #gameBoard {
+	background-color: black;
     margin: 0 auto;
-    width: 550px;
-    height: 450px;
+    width: 80%;
+    height: 400px;
     border: 1px solid #000;
     padding: 10px;
     position: relative;
@@ -20,50 +20,46 @@ body {
 #boxRed {
     background-color: red;
     opacity: 0.9;
-    height: 40%;
+    height: 180px;
     margin: 2px;
-    width: 48%;
+    width: 49%;
     float: left;
     position: relative;
-    /*border: 2px solid white;*/
-    box-shadow: 5px 5px 2px #888888;
+    box-shadow: 3px 3px 2px #d9d9d9;
 }
 
 #boxYellow {
     background-color: yellow;
     opacity: 0.9;
-    height: 40%;
+    height: 180px;
     margin: 2px;
-    width: 48%;
+    width: 49%;
     float: left;
     position: relative;
-    /*border: 2px solid white;*/
-    box-shadow: 5px 5px 2px #888888;
+    box-shadow: 3px 3px 2px #d9d9d9;
 }
 
 #boxBlue {
     background-color: blue;
     opacity: 0.9;
-    height: 40%;
+    height: 180px;
     margin: 2px;
-    width: 48%;
+    width: 49%;
     float: left;
     clear: left;
     position: relative;
-    /*border: 2px solid white;*/
-    box-shadow: 5px 5px 2px #888888;
+    box-shadow: 3px 3px 2px #d9d9d9;
 }
 
 #boxGreen {
     background-color: green;
     opacity: 0.9;
-    height: 40%;
+    height: 180px;
     margin: 2px;
-    width: 48%;
+    width: 49%;
     float: left;
     position: relative;
-    /*border: 2px solid white;*/
-    box-shadow: 5px 5px 2px #888888;
+    box-shadow: 3px 3px 2px #d9d9d9;
 }
 
 

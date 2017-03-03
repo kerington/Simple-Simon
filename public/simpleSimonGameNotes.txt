@@ -66,7 +66,7 @@ What I need to do:
 
 	- Simon (simon)
 	
-		- "Lights up" random box-color from pastel color to normal color ("red", "blue", "yellow", "green").
+		- "Lights up" random box-color from white to normal color ("red", "blue", "yellow", "green").
 	
 		- 1 second in between colors lighting up during Simon's turn. 
 	
