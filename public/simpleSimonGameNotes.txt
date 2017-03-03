@@ -55,18 +55,18 @@ What I need to do:
 	- DONE - COLOR BOXES - 4 boxes total - 
 		- DONE - ASSIGN each box an ID
 			- DONE - Use this number along with jQuery selector
-				-"animate" changing opacity? Does the div change colors?
+				- DONE - "animate" changing opacity? Does the div change colors?
 
 	
 	- "START BUTTON"
 
-		- This will be a click-able button in the middle of all 4 buttons.
+		- DONE - Create - This will be a click-able button in the middle of all 4 buttons.
 	
 			- WHEN CLICKED- this will prompt Simon(simon) to start the game by "lighting up" one color at random. (animate)
 
 	- Simon (simon)
 	
-		- "Lights up" random box-color from white to normal color ("red", "blue", "yellow", "green").
+		- "Lights up" random box-color for each color - "red", "blue", "yellow", "green".
 	
 		- 1 second in between colors lighting up during Simon's turn. 
 	
@@ -86,7 +86,7 @@ What I need to do:
 
 
 ** RYAN'S NOTES **
--	play back animation equence
+-	play back animation sequence
 	- "animate" each html element (jquerty selector) on an array
 
 if theres functionality that both Simon and player need for the user's turn, thats probably a function.
@@ -167,5 +167,4 @@ DON'T FORGET!:
 - ** MAKE SURE TO COMMIT AND PUSH TO GIT HUB FREQUENTLY!
 	~ All comments must explain the following: "Why am I committing this RIGHT NOW, what did I add/delete/change, and why?"!! * BE DESCRIPTIVE * 
 
-
-
+===========================================================================
