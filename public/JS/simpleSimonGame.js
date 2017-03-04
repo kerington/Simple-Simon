@@ -28,30 +28,23 @@ function newMemory() {
     }else{
         clearInterval(intervalId);
     }
-  },750)
+  },850)
 }
 newMemory();
-
-// function getRandomColor () {
-//     var squares = ["#buttonRed", "#buttonYellow", "#buttonBlue", "#buttonGreen"]
-//     var randomNumber = Math.floor(Math.random() * squares.length);
-//     return squares[randomNumber];
-//     console.log("working!");
-// }
 
 function animateRandomSquare (buttonId) {
     $(buttonId) .animate({
         opacity: 1
-    }, 500, function(){
+    }, 400, function(){
         $(buttonId).animate({
             opacity: .5
-        }, 500);
+        }, 400);
     })
 };
 
 var clickCount = 0;
 
-$(".fourButton").click(function(){
+$(".fourButtons").click(function(){
     var clickedId = "#" + $(this).attr("id");
     console.log("Clicked: " + clickedId);
     console.log("Array: " + memoryArray[clickCount]);
@@ -68,6 +61,11 @@ $(".fourButton").click(function(){
     }
 
 })
+
+
+
+
+
 
 
 // function getRandomNumberBetween0And(input) {
