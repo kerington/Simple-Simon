@@ -28,15 +28,15 @@ function newMemory() {
 	levelCounter ++;
 	level.html(levelCounter);
 	intervalId = setInterval(function(){
-		animateRandomSquare(memoryArray[i], 400);
 		
 		if(i < memoryArray.length){
+			animateRandomSquare(memoryArray[i], 400);
 			i++;
-		}else{
+		} else {
 			usersTurn();
 			clearInterval(intervalId);
 		}
-	},850);
+	}, 850);
 }
 
 function animateStartButton (buttonId, speed) {
@@ -66,11 +66,12 @@ function usersTurn() {
 	var clickCount = 0;
 
 	$(".fourButtons").on("click", function(){
+		console.log("user clicked a button");
 		var clickedId = "#" + $(this).attr("id");
 		console.log("Clicked: " + clickedId);
 		console.log("Array: " + memoryArray[clickCount]);
 		animateRandomSquare(clickedId, 180);
-		console.log(this);
+		// console.log(this);
 		if (clickedId == memoryArray[clickCount]){
 			if (clickCount == memoryArray.length -1 ) {
 				newMemory();
@@ -79,9 +80,11 @@ function usersTurn() {
 			} else {
 				clickCount++;
 			}
-		}else{
-			memoryArray =[];
+		} else {
+			memoryArray = [];
 			$(".gameOver").css("visibility", "visible");
+			$(".fourButtons").off("click");
+			console.log(memoryArray);
 		}
 
 	})
