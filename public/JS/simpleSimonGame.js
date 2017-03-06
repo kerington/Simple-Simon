@@ -20,6 +20,7 @@ function newMemory() {
       memoryArray.push("#buttonBlue");
       break;
   }
+
   var i = 0;
   var intervalId = setInterval(function(){
     animateRandomSquare(memoryArray[i]);
@@ -62,10 +63,9 @@ $(".fourButtons").click(function(){
 
 })
 
-// $("fourButtons").click(function){
-    
-// }
+$("#startButton").click(animateRandomSquare){
 
+}
 
 
 

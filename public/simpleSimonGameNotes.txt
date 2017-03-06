@@ -66,21 +66,21 @@ What I need to do:
 
 	- Simon (simon)
 	
-		- "Lights up" random box-color for each color - "red", "blue", "yellow", "green".
+		- DONE - "Lights up" random box-color for each color - "red", "blue", "yellow", "green".
 	
-		- 1 second in between colors lighting up during Simon's turn. 
+		- DONE(ish) - 1 second in between colors lighting up during Simon's turn. 
 	
 	- Player's turn (player)
 	
-		- Allow 7 seconds for player to click on the correct box (Correct boxes are defined by Simon) 
+		??? - Allow 7 seconds for player to click on the correct box (Correct boxes are defined by Simon) 
 	
-		- Light up to normal colors when clicked ("red", "blue", "yellow", "green")
+		- DONE - Light up to normal colors when clicked ("red", "blue", "yellow", "green")
 	
-		- For each correct click, add 3 points to **TOTAL POINTS.
+		??? - For each correct click, add 3 points to **TOTAL POINTS.
 			
-			- Then allow player 7 seconds to lick on the next Simon color.
+			??? - Then allow player 7 seconds to lick on the next Simon color.
 			
-				- When player gets color wrong, ** ADD a sound effect or screen effect AND alert the player **"GAME OVER"(pop up box?).
+				NTD - When player gets color wrong, ** ADD a sound effect or screen effect AND alert the player **"GAME OVER"(pop up box?).
 	
 		- "Click to begin"
 
