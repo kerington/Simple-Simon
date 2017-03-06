@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
 	"use strict";
 
 var memoryArray = [];
@@ -24,7 +24,7 @@ function newMemory() {
 			memoryArray.push("#buttonBlue");
 			break;
 	}
-	
+
 	levelCounter ++;
 	level.html(levelCounter);
 	intervalId = setInterval(function(){
@@ -102,5 +102,5 @@ $("#startButton").on("click", function(){
 	$(".gameOver").css("visibility", "hidden");
 });
 
-// });
+});
 
