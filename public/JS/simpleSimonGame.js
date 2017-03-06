@@ -7,7 +7,10 @@ var level = $("#countDisplay");
 
 function newMemory() {
 	var temp = Math.floor((Math.random() * 4) + 1);
-		switch(temp) {
+	var i = 0;
+	var intervalId;
+
+	switch(temp) {
 		case 1:
 			memoryArray.push("#buttonGreen");
 			break;
@@ -24,9 +27,9 @@ function newMemory() {
 	
 	levelCounter ++;
 	level.html(levelCounter);
-	var i = 0;
-	var intervalId = setInterval(function(){
+	intervalId = setInterval(function(){
 		animateRandomSquare(memoryArray[i], 400);
+		
 		if(i < memoryArray.length){
 			i++;
 		}else{
@@ -34,23 +37,19 @@ function newMemory() {
 			clearInterval(intervalId);
 		}
 	},850);
-	}
+}
 
 function animateStartButton (buttonId, speed) {
 	console.log(buttonId);
 	$(buttonId) .animate({
 		opacity: .5
-	}, 300, function(){
+	}, 250, function(){
 		$(buttonId).animate({
 			opacity: 1
-		}, 300);
+		}, 250);
 	})
 };
 
-	$("#startButton").on("click", function(){
-		var clickedId = "#" + $(this).attr("id");
-		animateStartButton(clickedId, 180);
-	});
 
 function animateRandomSquare (buttonId, speed) {
 	console.log(buttonId);
@@ -82,7 +81,7 @@ function usersTurn() {
 			}
 		}else{
 			memoryArray =[];
-			console.log("u loser!!!");
+			$(".gameOver").css("visibility", "visible");
 		}
 
 	})
@@ -94,20 +93,10 @@ $("#startButton").click(function(){
 	newMemory();
 });
 
-
-
-// function getRandomNumberBetween0And(input) {
-//     return Math.floor(Math.random() * input)
-// }
-
-// var squares = ["buttonRed", "buttonYellow", "buttonBlue", "buttonGreen"];
-
-// var randomIndex = getRandomNumberBetween0And(squares.length);
-
-// var randomSquare = squares[randomIndex];
-
-// console.log("meow");
-
+$("#startButton").on("click", function(){
+	var clickedId = "#" + $(this).attr("id");
+	animateStartButton(clickedId, 180);
+});
 
 // });
 

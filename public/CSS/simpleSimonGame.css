@@ -1,3 +1,16 @@
+body {
+    
+}
+.gameOver {
+    position: absolute;
+    font-size: 120px;
+    font-weight: bold;
+    top: -37%;
+    left: 8%;
+    z-index: 10;
+    color: red;
+    visibility: hidden;
+}
 .gameContainer {
     position: relative;
     background-color: #1A1A1A;
