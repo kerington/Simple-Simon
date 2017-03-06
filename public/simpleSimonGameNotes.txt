@@ -16,7 +16,7 @@ What I need to do:
 
         - DONE - Create - This will be a click-able button in the middle of all 4 buttons.
     
-            - WHEN CLICKED- this will prompt Simon(simon) to start the game by "lighting up" one color at random. (animate)
+            - DONE -WHEN CLICKED- this will prompt Simon(simon) to start the game by "lighting up" one color at random. (animate)
 
     - Simon (simon)
     
@@ -36,7 +36,7 @@ What I need to do:
             
                 NTD - When player gets color wrong, ** ADD a sound effect or screen effect AND alert the player **"GAME OVER"(pop up box?).
     
-        - "Click to begin"
+        - DONE -"Click to begin"
 
 
 ** RYAN'S NOTES **
