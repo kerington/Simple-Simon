@@ -1,8 +1,9 @@
 // $(document).ready(function(){
 	"use strict";
 
-var memoryArray = []
-
+var memoryArray = [];
+var levelCounter = 0 
+var level = $("#countDisplay");
 
 function newMemory() {
 	var temp = Math.floor((Math.random() * 4) + 1);
@@ -20,19 +21,23 @@ function newMemory() {
 			memoryArray.push("#buttonBlue");
 			break;
 	}
-
+	
+	levelCounter ++;
+	level.html(levelCounter);
 	var i = 0;
 	var intervalId = setInterval(function(){
 		animateRandomSquare(memoryArray[i]);
 		if(i < memoryArray.length){
 			i++;
 		}else{
+			usersTurn();
 			clearInterval(intervalId);
 		}
-	},850)
+	},850);
 	}
 
 function animateRandomSquare (buttonId) {
+	console.log(buttonId);
 	$(buttonId) .animate({
 		opacity: 1
 	}, 400, function(){
@@ -42,31 +47,35 @@ function animateRandomSquare (buttonId) {
 	})
 };
 
-var clickCount = 0;
+function usersTurn() {
+	var clickCount = 0;
 
-$(".fourButtons").click(function(){
-	var clickedId = "#" + $(this).attr("id");
-	console.log("Clicked: " + clickedId);
-	console.log("Array: " + memoryArray[clickCount]);
-	if (clickedId == memoryArray[clickCount]){
-		if (clickCount == memoryArray.length -1 ) {
-			newMemory();
-			clickCount = 0;
-		} else {
-			clickCount++;
+	$(".fourButtons").on("click", function(){
+		var clickedId = "#" + $(this).attr("id");
+		console.log("Clicked: " + clickedId);
+		console.log("Array: " + memoryArray[clickCount]);
+		animateRandomSquare(clickedId);
+		console.log(this);
+		if (clickedId == memoryArray[clickCount]){
+			if (clickCount == memoryArray.length -1 ) {
+				newMemory();
+				clickCount = 0;
+				$(".fourButtons").off("click");
+			} else {
+				clickCount++;
+			}
+		}else{
+			memoryArray =[];
+			console.log("u loser!!!");
 		}
-	}else{
-		memoryArray =[];
-		console.log("u loser!!!");
-	}
 
-})
-
+	})
+}
 $("#startButton").click(function(){
+	levelCounter = 0;
+	memoryArray = [];
 	newMemory();
 });
-
-
 
 
 
