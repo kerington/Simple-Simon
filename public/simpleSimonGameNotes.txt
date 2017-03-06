@@ -6,42 +6,42 @@ What I need to do:
 
 - DONE - Create one big box/shape (gameboard) in CSS to hold the following:
 
-	- DONE - COLOR BOXES - 4 boxes total - 
-		- DONE - ASSIGN each box an ID
-			- DONE - Use this number along with jQuery selector
-				- DONE - "animate" changing opacity? Does the div change colors?
+    - DONE - COLOR BOXES - 4 boxes total - 
+        - DONE - ASSIGN each box an ID
+            - DONE - Use this number along with jQuery selector
+                - DONE - "animate" changing opacity? Does the div change colors?
 
-	
-	- "START BUTTON"
+    
+    - "START BUTTON"
 
-		- DONE - Create - This will be a click-able button in the middle of all 4 buttons.
-	
-			- WHEN CLICKED- this will prompt Simon(simon) to start the game by "lighting up" one color at random. (animate)
+        - DONE - Create - This will be a click-able button in the middle of all 4 buttons.
+    
+            - WHEN CLICKED- this will prompt Simon(simon) to start the game by "lighting up" one color at random. (animate)
 
-	- Simon (simon)
-	
-		- DONE - "Lights up" random box-color for each color - "red", "blue", "yellow", "green".
-	
-		- DONE(ish) - 1 second in between colors lighting up during Simon's turn. 
-	
-	- Player's turn (player)
-	
-		??? - Allow 7 seconds for player to click on the correct box (Correct boxes are defined by Simon) 
-	
-		- DONE - Light up to normal colors when clicked ("red", "blue", "yellow", "green")
-	
-		??? - For each correct click, add 3 points to **TOTAL POINTS.
-			
-			??? - Then allow player 7 seconds to lick on the next Simon color.
-			
-				NTD - When player gets color wrong, ** ADD a sound effect or screen effect AND alert the player **"GAME OVER"(pop up box?).
-	
-		- "Click to begin"
+    - Simon (simon)
+    
+        - DONE - "Lights up" random box-color for each color - "red", "blue", "yellow", "green".
+    
+        - DONE(ish) - 1 second in between colors lighting up during Simon's turn. 
+    
+    - Player's turn (player)
+    
+        ??? - Allow 7 seconds for player to click on the correct box (Correct boxes are defined by Simon) 
+    
+        - DONE - Light up to normal colors when clicked ("red", "blue", "yellow", "green")
+    
+        ??? - For each correct click, add 3 points to **TOTAL POINTS.
+            
+            ??? - Then allow player 7 seconds to lick on the next Simon color.
+            
+                NTD - When player gets color wrong, ** ADD a sound effect or screen effect AND alert the player **"GAME OVER"(pop up box?).
+    
+        - "Click to begin"
 
 
 ** RYAN'S NOTES **
--	play back animation sequence
-	- "animate" each html element (jquerty selector) on an array
+-   play back animation sequence
+    - "animate" each html element (jquerty selector) on an array
 
 if theres functionality that both Simon and player need for the user's turn, thats probably a function.
 
@@ -61,25 +61,25 @@ if theres functionality that both Simon and player need for the user's turn, tha
 Rules:
 
 ~ The Challenge:
-	- To repeat the never-ending random "Light Up's" that generate.
-	- To win, you must beat the current high score by passing more levels than anyone else has.
-		-(EXTRA) **Leaderboard- Shows the top 5 player initials and game score, but highlights (larger text) top 3 player initials and game score (add date/timestamp also?)
+    - To repeat the never-ending random "Light Up's" that generate.
+    - To win, you must beat the current high score by passing more levels than anyone else has.
+        -(EXTRA) **Leaderboard- Shows the top 5 player initials and game score, but highlights (larger text) top 3 player initials and game score (add date/timestamp also?)
 
 ~ General Description:
-	- Start Button- When clicked, this will begin the game.
-	- (EXTRA) **Leaderboard Button- Shows the top 5 player initials and game score, but highlights (larger text) top 3 player initials and game score (add date/timestamp also?)
+    - Start Button- When clicked, this will begin the game.
+    - (EXTRA) **Leaderboard Button- Shows the top 5 player initials and game score, but highlights (larger text) top 3 player initials and game score (add date/timestamp also?)
 
 ~ How To Play: 
-	- Press the "START" button in the center of the game, and Simon will give the first signal.
-	- Repeat the signal by clicking on the same color.
-		- Each time you have repeated a signal, you have passed a round. You get 3 points for each round passed.
-	- Simon will duplicate the first signal, and then add another.
-	- Player will repeat the two signals by pressing the same colors in order of appearance.
-		- Player has 7 seconds to repeat the signals before GAME OVER.
-	- Simon will duplicate the first two signals, and then add a third. 
-	- The game will continue with this process as long as player doesn't mess up. As soon as player clicks an incorrect color, the game is over and **points are displayed on the screen.
-		- When you fail to repeat a sequence exactly or if you take **longer than 7 seconds** to repeat a signal, Simon responds with a **Losing sound and effect**; you have lost and must re-start the game and try again.
-	- If at any point in the game you miss a step, you may abandon all points and start over by pressing the START button. 
+    - Press the "START" button in the center of the game, and Simon will give the first signal.
+    - Repeat the signal by clicking on the same color.
+        - Each time you have repeated a signal, you have passed a round. You get 3 points for each round passed.
+    - Simon will duplicate the first signal, and then add another.
+    - Player will repeat the two signals by pressing the same colors in order of appearance.
+        - Player has 7 seconds to repeat the signals before GAME OVER.
+    - Simon will duplicate the first two signals, and then add a third. 
+    - The game will continue with this process as long as player doesn't mess up. As soon as player clicks an incorrect color, the game is over and **points are displayed on the screen.
+        - When you fail to repeat a sequence exactly or if you take **longer than 7 seconds** to repeat a signal, Simon responds with a **Losing sound and effect**; you have lost and must re-start the game and try again.
+    - If at any point in the game you miss a step, you may abandon all points and start over by pressing the START button. 
 
 ===========================================================================
 
@@ -119,6 +119,6 @@ DON'T FORGET!:
 - ** MAKE SURE code is FREE of duplicate code!
 
 - ** MAKE SURE TO COMMIT AND PUSH TO GIT HUB FREQUENTLY!
-	~ All comments must explain the following: "Why am I committing this RIGHT NOW, what did I add/delete/change, and why?"!! * BE DESCRIPTIVE * 
+    ~ All comments must explain the following: "Why am I committing this RIGHT NOW, what did I add/delete/change, and why?"!! * BE DESCRIPTIVE * 
 
 ===========================================================================

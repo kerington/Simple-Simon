@@ -36,6 +36,22 @@ function newMemory() {
 	},850);
 	}
 
+function animateStartButton (buttonId, speed) {
+	console.log(buttonId);
+	$(buttonId) .animate({
+		opacity: .5
+	}, 300, function(){
+		$(buttonId).animate({
+			opacity: 1
+		}, 300);
+	})
+};
+
+	$("#startButton").on("click", function(){
+		var clickedId = "#" + $(this).attr("id");
+		animateStartButton(clickedId, 180);
+	});
+
 function animateRandomSquare (buttonId, speed) {
 	console.log(buttonId);
 	$(buttonId) .animate({
@@ -54,7 +70,7 @@ function usersTurn() {
 		var clickedId = "#" + $(this).attr("id");
 		console.log("Clicked: " + clickedId);
 		console.log("Array: " + memoryArray[clickCount]);
-		animateRandomSquare(clickedId, 200);
+		animateRandomSquare(clickedId, 180);
 		console.log(this);
 		if (clickedId == memoryArray[clickCount]){
 			if (clickCount == memoryArray.length -1 ) {
@@ -71,6 +87,7 @@ function usersTurn() {
 
 	})
 }
+
 $("#startButton").click(function(){
 	levelCounter = 0;
 	memoryArray = [];
