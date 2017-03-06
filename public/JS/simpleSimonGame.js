@@ -26,7 +26,7 @@ function newMemory() {
 	level.html(levelCounter);
 	var i = 0;
 	var intervalId = setInterval(function(){
-		animateRandomSquare(memoryArray[i]);
+		animateRandomSquare(memoryArray[i], 400);
 		if(i < memoryArray.length){
 			i++;
 		}else{
@@ -36,14 +36,14 @@ function newMemory() {
 	},850);
 	}
 
-function animateRandomSquare (buttonId) {
+function animateRandomSquare (buttonId, speed) {
 	console.log(buttonId);
 	$(buttonId) .animate({
 		opacity: 1
-	}, 400, function(){
+	}, speed, function(){
 		$(buttonId).animate({
 			opacity: .5
-		}, 400);
+		}, speed);
 	})
 };
 
@@ -54,7 +54,7 @@ function usersTurn() {
 		var clickedId = "#" + $(this).attr("id");
 		console.log("Clicked: " + clickedId);
 		console.log("Array: " + memoryArray[clickCount]);
-		animateRandomSquare(clickedId);
+		animateRandomSquare(clickedId, 200);
 		console.log(this);
 		if (clickedId == memoryArray[clickCount]){
 			if (clickCount == memoryArray.length -1 ) {
