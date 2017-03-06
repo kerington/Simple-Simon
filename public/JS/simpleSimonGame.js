@@ -96,6 +96,7 @@ $("#startButton").click(function(){
 $("#startButton").on("click", function(){
 	var clickedId = "#" + $(this).attr("id");
 	animateStartButton(clickedId, 180);
+	$(".gameOver").css("visibility", "hidden");
 });
 
 // });
