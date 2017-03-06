@@ -2,52 +2,6 @@ Simple Simon Game Notes:
 
 ===========================================================================
 
-function animate(element) {
-	$(element).removeClass("up");
-	$(element).addClass("down");
-	setTimeout(function() {
-		$(element).addClass("up");
-		$(element).removeClass("down");
-	}, 100);
-}
-
-function getRandomColor () {
-		var squares = ["ENTER NAMES HERE"]
-		var randomNumber = Math.floor(Math.random() * squares.length);
-		return squares[randomNumber];
-}
-
-		function animateRandomSquare  () {
-		var squareToAnimate = getRandomColor();
-		animate(squareToAnimate);
-
-		}
-
-
-
-"use strict"
-
-function getRandomNumberBetween0And(input) {
-	return Math.floor(Math.random() * input)
-}
-
-var squares = ["green", "red", "blue", "yellow"];
-
-var randomIndex = getRandomNumberBetween0And(squares.length);
-
-var randomSquare = squares[randomIndex];
-
-
-
-
-
-
-
-
-
-
-
-
 What I need to do:
 
 - DONE - Create one big box/shape (gameboard) in CSS to hold the following:
@@ -138,9 +92,9 @@ Extras:
 
 ** Losing Effect - must find/create something. **
 
-** Box colors - start with normal colors  "normal" color when signal is given AND clicked **
+** Box colors - start with normal colors, then have colors light up when signal is given AND clicked **
 
-** Set up point counter that adds 3 points to total after round is passed. These points will show up on a Leaderboard after each round, and will be accessable by a button at the bottom of the screen. **
+??? ** Set up point counter that adds 3 points to total after round is passed. These points will show up on a Leaderboard after each round, and will be accessable by a button at the bottom of the screen. **
 
 ===========================================================================
 
