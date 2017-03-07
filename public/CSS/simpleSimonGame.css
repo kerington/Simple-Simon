@@ -1,24 +1,26 @@
 body {
-    
+    background-image: url("/img/stardust.png");
+    background-size: cover;
 }
 
 .gameOver {
     position: absolute;
-    font-size: 120px;
+    font-size: 160px;
     font-weight: bold;
-    top: -11%;
-    left: -35%;
-    width: 750px;
+    top: -42%;
+    left: -53%;
+    width: 900px;
     z-index: 10;
-    color: rgb(183, 27, 8);
+    font-family: 'Unica One', cursive;
+    color: rgb(70, 9, 2);
     visibility: hidden;
 }
 
 .gameContainer {
     position: relative;
-    background-color: #1A1A1A;
+    background-color: #232323;
     border-radius: 80%;
-    border: solid 1px #1A1A1A;
+    border: solid 1px #232323;
     width: 440px;
     height: 440px;
     margin: 0 auto;
@@ -67,9 +69,9 @@ body {
 
 #center {
     position: absolute;
-    background-color: white;
+    background-color: #222;
     border-radius: 50%;
-    border: 20px solid #1A1A1A;
+    border: 20px solid #222;
     width: 200px;
     height: 200px;
     top: 120px;
@@ -81,8 +83,11 @@ body {
     line-height: 90px;
     width: 100%;
     text-align: center;
-    font-size: 40px;
-    color: #333333;
+    font-family: 'Unica One', cursive;
+    font-size: 120px;
+    font-weight: bold;
+    color: #232322;
+
 }
 
 #countBox {
@@ -94,7 +99,7 @@ body {
 #countDisplay {
     background-color: yellow;
     border-radius: 50%;
-    border: solid 3px #1A1A1A;
+    border: solid 3px #222;
     width: 95%;
     height: 90%;
     margin: 50px 10px 0px 10px;
@@ -107,9 +112,10 @@ body {
     height: 40%;
     margin: 4px 6px 0px 26px;
     text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: #1A1A1A;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    color: white;
 }
 
 #startBox {
@@ -121,7 +127,7 @@ body {
 #startButton {
     background-color: red;
     border-radius: 50%;
-    border: solid 3px #1A1A1A;
+    border: solid 3px #222;
     margin: 50px 10px 0px 10px;
     width: 95%;
     height: 90%;
@@ -133,8 +139,9 @@ body {
 #startText {
     margin: 4px 6px 0px 6px;
     height: 30%;
-    font-size: 14px;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
     text-align: center;
-    font-weight: bold;
-    color: #1A1A1A;
+    /*font-weight: bold;*/
+    color: white;
 }

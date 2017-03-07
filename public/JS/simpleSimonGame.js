@@ -1,9 +1,16 @@
 $(document).ready(function(){
 	"use strict";
 
+//===========================================================
+// Global Variables
+//===========================================================
 var memoryArray = [];
 var levelCounter = 0 
 var level = $("#countDisplay");
+
+//===========================================================
+// 
+//===========================================================
 
 function newMemory() {
 	var temp = Math.floor((Math.random() * 4) + 1);
@@ -39,8 +46,12 @@ function newMemory() {
 	}, 850);
 }
 
+//===========================================================
+// Start button animation
+//===========================================================
+
 function animateStartButton (buttonId, speed) {
-	console.log(buttonId);
+	// console.log(buttonId);
 	$(buttonId) .animate({
 		opacity: .5
 	}, 250, function(){
@@ -50,9 +61,12 @@ function animateStartButton (buttonId, speed) {
 	})
 };
 
+//===========================================================
+// Animation for Random Squares (Computer's Turn)
+//===========================================================
 
 function animateRandomSquare (buttonId, speed) {
-	console.log(buttonId);
+	// console.log(buttonId);
 	$(buttonId) .animate({
 		opacity: 1
 	}, speed, function(){
@@ -62,16 +76,19 @@ function animateRandomSquare (buttonId, speed) {
 	})
 };
 
+//===========================================================
+// 
+//===========================================================
+
 function usersTurn() {
 	var clickCount = 0;
 
 	$(".fourButtons").on("click", function(){
-		console.log("user clicked a button");
+		// console.log("user clicked a button");
 		var clickedId = "#" + $(this).attr("id");
-		console.log("Clicked: " + clickedId);
-		console.log("Array: " + memoryArray[clickCount]);
+		// console.log("Clicked: " + clickedId);
+		// console.log("Array: " + memoryArray[clickCount]);
 		animateRandomSquare(clickedId, 180);
-		// console.log(this);
 		if (clickedId == memoryArray[clickCount]){
 			if (clickCount == memoryArray.length -1 ) {
 				newMemory();
@@ -82,13 +99,17 @@ function usersTurn() {
 			}
 		} else {
 			memoryArray = [];
+			$("#textTitle").css("visibility", "hidden");
 			$(".gameOver").css("visibility", "visible");
 			$(".fourButtons").off("click");
-			console.log(memoryArray);
+			// console.log(memoryArray);
 		}
-
 	})
 }
+
+//===========================================================
+// Makes the start button clear the array and counter
+//===========================================================
 
 $("#startButton").click(function(){
 	levelCounter = 0;
@@ -96,10 +117,15 @@ $("#startButton").click(function(){
 	newMemory();
 });
 
+//===========================================================
+// Animates the start button
+//===========================================================
+
 $("#startButton").on("click", function(){
 	var clickedId = "#" + $(this).attr("id");
 	animateStartButton(clickedId, 180);
 	$(".gameOver").css("visibility", "hidden");
+	$("#textTitle").css("visibility", "visible");
 });
 
 });
