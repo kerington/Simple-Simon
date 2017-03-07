@@ -18,9 +18,8 @@ body {
 
 .gameContainer {
     position: relative;
-    background-color: #BAC8D1;
     border-radius: 80%;
-    border: solid 1px #BAC8D1;
+    /*border: solid 1px #D5DCE0;*/
     width: 440px;
     height: 440px;
     margin: 0 auto;
@@ -30,9 +29,9 @@ body {
 .fourButtons {
     position: absolute;
     margin: 20px;
-    width: 190px;
-    height: 190px;
-    opacity: .5;
+    width: 200px;
+    height: 200px;
+    opacity: .6;
 }
 
 .activated {
@@ -69,14 +68,13 @@ body {
 
 #center {
     position: absolute;
-    background-image: url("/img/symphony.png");
-    background-color: #6A8BA0;
+    background-image: url(/img/symphony.png);
     border-radius: 50%;
-    border: 20px solid #BAC8D1;
-    width: 200px;
-    height: 200px;
-    top: 120px;
-    left: 120px;
+    /* border: 20px solid #D5DCE0; */
+    width: 175px;
+    height: 175px;
+    top: 130px;
+    left: 130px;
 }
 
 #textTitle {
@@ -98,20 +96,21 @@ body {
 }
 
 #countDisplay {
-    background-color: #F2E15E;
+    background-color: #C0D0D8;
     border-radius: 50%;
-    border: solid 3px #F2E15E;
-    width: 95%;
-    height: 90%;
-    margin: 50px 10px 0px 10px;
+    border: solid 3px #C0D0D8;
+    margin: 50px 10px 10px 27px;
+    width: 73%;
+    height: 92%;
     text-align: center;
     line-height: 35px;
     font-size: 20px;
+    color: #FFF;
 }
 
 #countText {
     height: 40%;
-    margin: 4px 6px 0px 26px;
+    margin: -7px 6px 0px 28px;
     text-align: center;
     font-family: 'Pacifico', cursive;
     font-size: 18px;
@@ -126,19 +125,19 @@ body {
 }
 
 #startButton {
-    background-color: #DB847A;
+    background-color: #C0D0D8;
     border-radius: 50%;
-    border: solid 3px #DB847A;
-    margin: 50px 10px 0px 10px;
-    width: 95%;
-    height: 90%;
+    border: solid 3px #C0D0D8;
+    margin: 50px 46px 10px 24px;
+    width: 73%;
+    height: 92%;
     text-align: center;
     line-height: 20px;
     font-size: 20px;
 }
 
 #startText {
-    margin: 4px 6px 0px 6px;
+    margin: -6px 6px 0px 26px;
     height: 30%;
     font-family: 'Pacifico', cursive;
     font-size: 18px;

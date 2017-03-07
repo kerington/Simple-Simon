@@ -76,7 +76,7 @@ function animateRandomSquare (buttonId, speed) {
 };
 
 //=================================================================
-// 
+// Animates the button/click on Players turn  
 //=================================================================
 
 function usersTurn() {
@@ -85,10 +85,16 @@ function usersTurn() {
 	$(".fourButtons").on("click", function(){
 		var clickedId = "#" + $(this).attr("id");
 		animateRandomSquare(clickedId, 180);
+//=================================================================
+// Makes sure the Players turn matches the Simon/Computer's turn
+//=================================================================
 		if (clickedId == memoryArray[clickCount]){
 			if (clickCount == memoryArray.length -1 ) {
 				newMemory();
 				clickCount = 0;
+//=================================================================
+//Turns off Player click function during Simon/Computer's turn
+//=================================================================
 				$(".fourButtons").off("click");
 			} else {
 				clickCount++;
