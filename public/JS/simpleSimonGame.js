@@ -31,7 +31,9 @@ function newMemory() {
 			memoryArray.push("#buttonBlue");
 			break;
 	}
-
+//=================================================================
+// Tells the computer to enter random input, then prompt user turn
+//=================================================================
 	levelCounter ++;
 	level.html(levelCounter);
 	intervalId = setInterval(function(){
@@ -65,7 +67,6 @@ function animateStartButton (buttonId, speed) {
 //=================================================================
 
 function animateRandomSquare (buttonId, speed) {
-	// console.log(buttonId);
 	$(buttonId) .animate({
 		opacity: 1
 	}, speed, function(){
