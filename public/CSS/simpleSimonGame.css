@@ -1,6 +1,6 @@
 body {
-    background-image: url("/img/stardust.png");
-    background-size: cover;
+    background-image: url("/img/symphony.png");
+    background-color: #6A8BA0;
 }
 
 .gameOver {
@@ -11,16 +11,16 @@ body {
     left: -53%;
     width: 900px;
     z-index: 10;
-    font-family: 'Unica One', cursive;
+    font-family: 'Pacifico', cursive;
     color: rgb(70, 9, 2);
     visibility: hidden;
 }
 
 .gameContainer {
     position: relative;
-    background-color: #232323;
+    background-color: #BAC8D1;
     border-radius: 80%;
-    border: solid 1px #232323;
+    border: solid 1px #BAC8D1;
     width: 440px;
     height: 440px;
     margin: 0 auto;
@@ -40,28 +40,28 @@ body {
 }
 
 #buttonGreen {
-    background-color: green;
+    background-color: #81AA8A;
     border-radius: 100% 0 0 0; /*Creating the curve on the outside of the colored buttons*/
     top: 0; 
     left: 0; /*Keeping the buttons in place and not allowing them to become distorted*/
 }
 
 #buttonRed {
-    background-color: red;
+    background-color: #DB847A;
     border-radius: 0 100% 0 0 ;
     top: 0;
     right: 0;
 }
 
 #buttonYellow {
-    background-color: yellow;
+    background-color: #F2E15E;
     border-radius: 0 0 0 100%;
     bottom: 0;
     left: 0;
 }
 
 #buttonBlue {
-    background-color: blue;
+    background-color: #5C4B5E;
     border-radius: 0 0 100% 0 ;
     bottom: 0;
     right: 0;
@@ -69,9 +69,10 @@ body {
 
 #center {
     position: absolute;
-    background-color: #222;
+    background-image: url("/img/symphony.png");
+    background-color: #6A8BA0;
     border-radius: 50%;
-    border: 20px solid #222;
+    border: 20px solid #BAC8D1;
     width: 200px;
     height: 200px;
     top: 120px;
@@ -79,14 +80,14 @@ body {
 }
 
 #textTitle {
-    height: 70px;
+    height: 80px;
     line-height: 90px;
     width: 100%;
     text-align: center;
-    font-family: 'Unica One', cursive;
-    font-size: 120px;
-    font-weight: bold;
-    color: #232322;
+    font-family: 'Pacifico', cursive;
+    font-size: 110px;
+    /*font-weight: bold;*/
+    color: #7F97A5;
 
 }
 
@@ -97,9 +98,9 @@ body {
 }
 
 #countDisplay {
-    background-color: yellow;
+    background-color: #F2E15E;
     border-radius: 50%;
-    border: solid 3px #222;
+    border: solid 3px #F2E15E;
     width: 95%;
     height: 90%;
     margin: 50px 10px 0px 10px;
@@ -112,10 +113,10 @@ body {
     height: 40%;
     margin: 4px 6px 0px 26px;
     text-align: center;
-    font-family: 'Unica One', cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 18px;
     /*font-weight: bold;*/
-    color: white;
+    color: #7F97A5;
 }
 
 #startBox {
@@ -125,9 +126,9 @@ body {
 }
 
 #startButton {
-    background-color: red;
+    background-color: #DB847A;
     border-radius: 50%;
-    border: solid 3px #222;
+    border: solid 3px #DB847A;
     margin: 50px 10px 0px 10px;
     width: 95%;
     height: 90%;
@@ -139,9 +140,9 @@ body {
 #startText {
     margin: 4px 6px 0px 6px;
     height: 30%;
-    font-family: 'Unica One', cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 18px;
     text-align: center;
     /*font-weight: bold;*/
-    color: white;
+    color: #7F97A5;
 }
