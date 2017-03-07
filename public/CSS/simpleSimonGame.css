@@ -5,12 +5,12 @@ body {
 
 .gameOver {
     position: absolute;
-    font-size: 110px;
+    font-size: 150px;
     font-weight: bold;
     top: -37%;
-    left: -53%;
-    width: 900px;
-    height: 180px;
+    left: -96%;
+    width: 1282px;
+    height: 243px;
     z-index: 10;
     font-family: 'Pacifico', cursive;
     color: #7A4944;
